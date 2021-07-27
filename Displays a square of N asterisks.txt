@@ -1,0 +1,33 @@
+package testingProject;
+
+import java.util.*;
+
+public class MainClass {
+  
+  static Scanner cin = new Scanner (System.in);
+  
+  public static void main(String[] args) {
+    
+    /*
+     * Write a Java program that prompts the user to enter an integer N between 3 and 20 
+     * and then displays a square of size N on each side. 
+     * For example, if the user enters 4 for N, the program must display the following square.
+     *   * * * *
+     *   * * * *
+     *   * * * *
+     *   * * * *
+     */
+    int i, j, n;
+    
+    System.out.print("Enter a number between 3 & 20: ");
+    n = Integer.parseInt(cin.nextLine());
+    
+    for (i = 3; i <= n; i++) {
+      for (j = 3; j <= n; j++) {
+        System.out.print("* ");
+      }
+      System.out.println();
+    }
+    
+ }
+}
